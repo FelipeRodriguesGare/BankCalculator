@@ -1,7 +1,6 @@
 package br.com.letscode.assets;
 
 import lombok.Getter;
-import org.w3c.dom.Text;
 
 import java.util.*;
 
@@ -32,9 +31,7 @@ public class Account {
 
     public void newBalance(){
         this.balance=0.0;
-        int i=0;
         for (Operations operation : this.operations) {
-            i++;
             switch (operation.getOperationType().toUpperCase()){
                 case "SAQUE":
                     this.balance-=operation.getValue();
@@ -49,21 +46,22 @@ public class Account {
 
     @Override
     public String toString() {
-        int size = 45;
         StringBuilder text = new StringBuilder();
-        text.append("BANCO ").append(this.bank).append("\n");
-        text.append("AGÊNCIA ").append(this.agency).append("\n");
-        text.append("CONTA ").append(this.numberAccount).append("\n\n");
+        text.append(String.format("%1$" + -7 + "s", "BANCO").replace(' ', '_')).append(String.format("%1$" + 20 + "s", this.bank).replace(' ', '_')).append("\n");
+        text.append(String.format("%1$" + -7 + "s", "AGÊNCIA").replace(' ', '_')).append(String.format("%1$" + 20 + "s", this.agency).replace(' ', '_')).append("\n");
+        text.append(String.format("%1$" + -7 + "s", "CONTA").replace(' ', '_')).append(String.format("%1$" + 20 + "s", this.numberAccount).replace(' ', '_')).append("\n\n");
 
         text.append(String.format("%1$" + 11 + "s", "Data")).append(String.format("%1$" + 21 + "s", "Tipo")).append(String.format("%1$" + 15 + "s", "Valor")).append(String.format("%1$" + 15 + "s", "Operador\n"));
+        text.append(String.format("%1$" + 61 + "s", "-").replace(' ', '-')).append("\n");
         for (Operations operation : this.operations){
             text.append(operation.getOperationDate()).append((" ").repeat(Math.max(0,7)));
             text.append(String.format("%1$" + -15 + "s", operation.getOperationType()));
-            text.append(String.format("%1$" + 6 + "s", operation.getValue()));
-            text.append(String.format("%1$" + 13 + "s", operation.getOperator())).append("\n");
+            char character = operation.getOperationType().equalsIgnoreCase("SAQUE") ? '-':'+';
+            text.append(character).append(String.format("%1$" + 6 + "s", operation.getValue()));
+            text.append(String.format("%1$" + 6 + "s", " ")).append(String.format("%1$" + -20 + "s", operation.getOperator())).append("\n");
         }
 
-        text.append("\n\nSaldo ").append(String.format("%1$" + 54 + "s", this.balance));
+        text.append("\nSaldo").append(String.format("%1$" + 55 + "s", this.balance).replace(' ', '_'));
 
         return text.toString();
     }

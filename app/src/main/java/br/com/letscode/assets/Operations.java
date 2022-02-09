@@ -3,7 +3,6 @@ package br.com.letscode.assets;
 import lombok.Getter;
 import lombok.ToString;
 
-import java.security.spec.RSAOtherPrimeInfo;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 

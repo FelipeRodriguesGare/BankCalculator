@@ -1,6 +1,5 @@
 package br.com.letscode.input_output;
 
-import com.google.common.base.Utf8;
 import com.opencsv.CSVReader;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +8,6 @@ import lombok.Setter;
 
 import java.io.*;
 import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
