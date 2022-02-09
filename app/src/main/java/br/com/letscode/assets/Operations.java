@@ -46,7 +46,17 @@ public class Operations implements Comparable<Operations> {
 
     @Override
     public int compareTo(Operations o) {
-        System.out.println(this.operationDate.compareTo(o.getOperationDate()));
-        return 2*this.operationDate.compareTo(o.getOperationDate()) + this.value.compareTo(o.getValue());
+        int dateComparation = this.operationDate.compareTo(o.getOperationDate());
+        if (dateComparation != 0) return dateComparation/Math.abs(dateComparation);
+
+        int valueCompartaion = this.value.compareTo(o.getValue());
+        if (valueCompartaion != 0) return valueCompartaion;
+
+        int operatorComparation = this.operator.compareTo(o.getOperator());
+        if(operatorComparation != 0)  return operatorComparation/Math.abs(operatorComparation);
+
+        int typeComparation = this.operationType.compareTo(o.getOperationType());
+        if(typeComparation != 0) return typeComparation/Math.abs(typeComparation);
+        return 0;
     }
 }

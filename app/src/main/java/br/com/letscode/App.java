@@ -2,13 +2,14 @@ package br.com.letscode;
 
 import br.com.letscode.assets.Account;
 import br.com.letscode.assets.ManageAccounts;
-import br.com.letscode.input_output.ReadFile;
+import br.com.letscode.input_output.FileManipulation;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.nio.file.Paths;
+import java.util.Arrays;
 import java.util.Map;
 
 public class App {
@@ -25,7 +26,7 @@ public class App {
         }
         assert file != null;
 
-        ReadFile reader = new ReadFile(file.getAbsolutePath());
+        FileManipulation reader = new FileManipulation(file.getAbsolutePath());
 
         ManageAccounts manage = new ManageAccounts();
         manage.menageAccounts(reader.readCSV());
@@ -34,8 +35,8 @@ public class App {
         for (Map.Entry<String,Account> entry : accounts.entrySet()){
             System.out.println("Key = " + entry.getKey() +
                     ", Value = " + entry.getValue());
+            reader.exportTxt(entry.getValue().toString(),entry.getKey());
         }
-//        accounts.get("148972c2-7062-40c3-9b4d-e96b538a90dc").newBalance();
 
     }
 }

@@ -1,20 +1,18 @@
 package br.com.letscode.assets;
 
-import br.com.letscode.enumerate.OperatoinTypes;
 import lombok.Getter;
-import lombok.ToString;
+import org.w3c.dom.Text;
 
 import java.util.*;
 
 @Getter
-@ToString
 public class Account {
     private final String id;
     private final String bank;
     private final String agency;
     private final String numberAccount;
     private Double balance;
-    private final Set<Operations> operations = new HashSet<>();
+    private final Set<Operations> operations = new TreeSet<>();
 
     public Account(String[] header, String[] info){
         List<String> list = Arrays.asList(header);
@@ -46,16 +44,27 @@ public class Account {
                     break;
                 default:
             }
-//            System.out.println(operation.toString());
         }
-//        System.out.println(i);
-//        System.out.println(this.balance);
     }
 
-    public void printExtract(){
+    @Override
+    public String toString() {
+        int size = 45;
+        StringBuilder text = new StringBuilder();
+        text.append("BANCO ").append(this.bank).append("\n");
+        text.append("AGÊNCIA ").append(this.agency).append("\n");
+        text.append("CONTA ").append(this.numberAccount).append("\n\n");
 
+        text.append(String.format("%1$" + 11 + "s", "Data")).append(String.format("%1$" + 21 + "s", "Tipo")).append(String.format("%1$" + 15 + "s", "Valor")).append(String.format("%1$" + 15 + "s", "Operador\n"));
+        for (Operations operation : this.operations){
+            text.append(operation.getOperationDate()).append((" ").repeat(Math.max(0,7)));
+            text.append(String.format("%1$" + -15 + "s", operation.getOperationType()));
+            text.append(String.format("%1$" + 6 + "s", operation.getValue()));
+            text.append(String.format("%1$" + 13 + "s", operation.getOperator())).append("\n");
+        }
 
+        text.append("\n\nSaldo ").append(String.format("%1$" + 54 + "s", this.balance));
+
+        return text.toString();
     }
-
-
 }
