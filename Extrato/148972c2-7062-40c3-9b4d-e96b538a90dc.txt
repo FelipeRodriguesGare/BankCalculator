@@ -1,0 +1,29 @@
+BANCO_____________Santander
+AGÊNCIA________________2254
+CONTA____________37025102-7
+
+       Data                 Tipo          Valor      Operador
+-------------------------------------------------------------
+2022-01-03T15:20:27       DEPOSITO       + 360.0      Jade                
+2022-01-04T11:24:42       DEPOSITO       +  20.0      Ângelo             
+2022-01-07T11:36:58       SAQUE          - 520.0      Francisco           
+2022-01-07T13:36:58       SAQUE          -  40.0      Maitê              
+2022-01-07T13:36:58       DEPOSITO       +  40.0      Matheus             
+2022-01-07T14:36:58       DEPOSITO       + 160.0      Bryan               
+2022-01-07T15:55:53       DEPOSITO       + 100.0      Bryan               
+2022-01-07T15:55:53       SAQUE          - 560.0      Francisco           
+2022-01-08T11:18:40       DEPOSITO       +  80.0      Alexandre           
+2022-01-08T15:18:40       SAQUE          -  40.0      Larissa             
+2022-01-17T12:30:28       DEPOSITO       +  60.0      David               
+2022-01-17T13:30:28       DEPOSITO       +  80.0      Frederico           
+2022-01-17T14:30:28       DEPOSITO       +  60.0      Miguel              
+2022-01-17T15:30:28       SAQUE          - 440.0      Antônio            
+2022-01-21T13:42:37       DEPOSITO       +  60.0      Ezequiel            
+2022-01-21T15:37:07       SAQUE          - 540.0      Flôr               
+2022-01-23T11:32:28       SAQUE          - 200.0      Matheus             
+2022-01-25T13:22:43       DEPOSITO       + 380.0      Eduarda             
+2022-01-25T15:22:43       DEPOSITO       + 540.0      Felipe              
+2022-01-28T12:34:24       DEPOSITO       + 180.0      Clarissa            
+2022-01-29T13:56:11       SAQUE          - 220.0      Juliano             
+
+Saldo_________________________________________________-440.0

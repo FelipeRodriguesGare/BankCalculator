@@ -1,0 +1,30 @@
+BANCO_____________Santander
+AGÊNCIA________________4009
+CONTA____________43811754-6
+
+       Data                 Tipo          Valor      Operador
+-------------------------------------------------------------
+2022-01-03T12:20:27       DEPOSITO       +  80.0      Yuri                
+2022-01-04T12:24:42       DEPOSITO       +  40.0      Murilo              
+2022-01-04T15:24:42       DEPOSITO       +  20.0      Emanuel             
+2022-01-04T15:24:42       DEPOSITO       + 420.0      Bryan               
+2022-01-07T13:55:53       SAQUE          - 100.0      Francisco           
+2022-01-08T13:18:40       DEPOSITO       +  40.0      Victor              
+2022-01-17T14:30:28       DEPOSITO       + 300.0      Larissa             
+2022-01-20T12:43:47       DEPOSITO       +  20.0      Débora             
+2022-01-20T13:43:47       SAQUE          - 600.0      Ingrid              
+2022-01-20T14:43:47       DEPOSITO       + 100.0      Bryan               
+2022-01-20T15:12:24       SAQUE          - 360.0      Ezequiel            
+2022-01-21T11:37:07       DEPOSITO       + 380.0      Milene              
+2022-01-21T14:42:37       DEPOSITO       + 440.0      Lorenzo             
+2022-01-25T11:22:43       SAQUE          - 220.0      Catarina            
+2022-01-25T11:22:43       DEPOSITO       + 400.0      Murilo              
+2022-01-25T13:22:43       DEPOSITO       + 280.0      Francisco           
+2022-01-26T14:53:20       DEPOSITO       +  20.0      Clarissa            
+2022-01-26T14:53:20       SAQUE          -  60.0      Murilo              
+2022-01-28T11:34:24       DEPOSITO       + 560.0      Brenda              
+2022-01-28T14:34:24       SAQUE          -  60.0      Theo                
+2022-01-29T11:56:11       SAQUE          - 180.0      David               
+2022-01-29T13:56:11       SAQUE          - 240.0      Antônio            
+
+Saldo_________________________________________________1280.0

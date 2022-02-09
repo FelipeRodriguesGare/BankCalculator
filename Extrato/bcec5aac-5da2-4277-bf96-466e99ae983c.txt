@@ -1,0 +1,31 @@
+BANCO_____________Santander
+AGÊNCIA________________3381
+CONTA____________60214801-9
+
+       Data                 Tipo          Valor      Operador
+-------------------------------------------------------------
+2022-01-03T11:20:27       DEPOSITO       + 280.0      Eduarda             
+2022-01-04T11:24:42       DEPOSITO       + 460.0      Miguel              
+2022-01-04T12:24:42       DEPOSITO       +  40.0      Brenda              
+2022-01-04T12:24:42       DEPOSITO       + 480.0      Victor              
+2022-01-04T15:24:42       DEPOSITO       + 420.0      Bryan               
+2022-01-07T14:36:58       SAQUE          -  40.0      Brenda              
+2022-01-07T15:36:58       DEPOSITO       +  80.0      Maitê              
+2022-01-07T15:36:58       DEPOSITO       + 460.0      Laura               
+2022-01-08T12:18:40       SAQUE          - 260.0      Victor              
+2022-01-08T14:18:40       DEPOSITO       + 240.0      Ângelo             
+2022-01-20T12:43:47       DEPOSITO       +  60.0      Miguel              
+2022-01-20T13:12:24       DEPOSITO       + 520.0      Victor              
+2022-01-20T14:43:47       SAQUE          - 560.0      Leonardo            
+2022-01-21T13:37:07       DEPOSITO       + 100.0      Juliano             
+2022-01-21T14:37:07       DEPOSITO       + 580.0      Francisco           
+2022-01-21T14:42:37       DEPOSITO       + 420.0      Felipe              
+2022-01-23T12:32:28       SAQUE          - 580.0      Lucas               
+2022-01-26T12:53:20       SAQUE          - 540.0      Flôr               
+2022-01-28T11:34:24       SAQUE          - 380.0      Emanuel             
+2022-01-29T12:56:11       SAQUE          - 320.0      Leonardo            
+2022-01-29T13:56:11       DEPOSITO       + 500.0      Ângelo             
+2022-01-29T13:56:11       SAQUE          - 580.0      Frederico           
+2022-01-29T15:56:11       DEPOSITO       + 600.0      Luiza               
+
+Saldo_________________________________________________1980.0

@@ -1,0 +1,25 @@
+BANCO_____________Santander
+AGÊNCIA________________3121
+CONTA____________35306174-8
+
+       Data                 Tipo          Valor      Operador
+-------------------------------------------------------------
+2022-01-04T11:24:42       DEPOSITO       + 100.0      Felipe              
+2022-01-04T13:24:42       SAQUE          -  80.0      Bryan               
+2022-01-07T15:36:58       SAQUE          -  20.0      Eduarda             
+2022-01-07T15:55:53       DEPOSITO       + 260.0      Larissa             
+2022-01-08T13:18:40       DEPOSITO       + 360.0      Miguel              
+2022-01-17T11:30:28       DEPOSITO       + 100.0      Larissa             
+2022-01-17T14:30:28       SAQUE          - 280.0      João               
+2022-01-20T15:12:24       SAQUE          - 220.0      Lucas               
+2022-01-20T15:12:24       SAQUE          - 300.0      Larissa             
+2022-01-21T14:37:07       DEPOSITO       +  20.0      Clarissa            
+2022-01-23T11:32:28       DEPOSITO       + 160.0      Helena              
+2022-01-23T12:32:28       DEPOSITO       +  80.0      Catarina            
+2022-01-25T12:22:43       DEPOSITO       + 100.0      Ingrid              
+2022-01-25T14:22:43       DEPOSITO       + 160.0      Giovanna            
+2022-01-26T12:53:20       DEPOSITO       +  60.0      Felipe              
+2022-01-26T15:53:20       DEPOSITO       + 520.0      Luis                
+2022-01-28T13:34:24       SAQUE          - 160.0      Ezequiel            
+
+Saldo__________________________________________________860.0
