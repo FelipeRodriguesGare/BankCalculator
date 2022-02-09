@@ -47,6 +47,7 @@ public class Account {
     @Override
     public String toString() {
         StringBuilder text = new StringBuilder();
+        text.append(String.format("%1$" + 39 + "s", " EXTRATO BANCARIO ").replace(' ', '=')).append(String.format("%1$" + 22 + "s", "=").replace(' ', '=')).append("\n\n");
         text.append(String.format("%1$" + -7 + "s", "BANCO").replace(' ', '_')).append(String.format("%1$" + 20 + "s", this.bank).replace(' ', '_')).append("\n");
         text.append(String.format("%1$" + -7 + "s", "AGÊNCIA").replace(' ', '_')).append(String.format("%1$" + 20 + "s", this.agency).replace(' ', '_')).append("\n");
         text.append(String.format("%1$" + -7 + "s", "CONTA").replace(' ', '_')).append(String.format("%1$" + 20 + "s", this.numberAccount).replace(' ', '_')).append("\n\n");
